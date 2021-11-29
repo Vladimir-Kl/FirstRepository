@@ -35,8 +35,3 @@ List of updates:
 ![](https://user-images.githubusercontent.com/94999233/143882797-a10d1b52-d1ec-4b60-a88c-8f7fd5eb5561.png)
 
 In the usual case, a new window will open in the same place instead of the previous one.
-
-<<<<<<< HEAD
-=======
-
->>>>>>> 35644680357daca45276ec9c40769aa3d5233edf
