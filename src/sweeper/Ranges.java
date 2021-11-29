@@ -46,7 +46,6 @@ public class Ranges {
 	    	
 	       Coord around;
 	       ArrayList<Coord> list = new ArrayList<>();
-	       
 	       for (int x = coord.x - 1; x <= coord.x + 1; x++) {
 	           for (int y = coord.y - 1; y <= coord.y + 1; y++) {
 	               if (inRange(around = new Coord(x, y))) {
@@ -58,5 +57,4 @@ public class Ranges {
 	       }
 	       return list;
 	    }
-	    
 }

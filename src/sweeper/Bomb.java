@@ -1,6 +1,6 @@
 package sweeper;
 
-class Bomb {
+public class Bomb {
 	
 	 	private Matrix bombMap;
 	    private int totalBombs;
@@ -11,17 +11,16 @@ class Bomb {
 	        fixBombsCount();
 	    }
 
-
 	    void start() {
 	    	
 	        bombMap = new Matrix(Box.ZERO);
 	        
 	        for (int i = 0; i < totalBombs; i++) {
-	        placeBomb ();
+	        	placeBomb ();
 	        }
 	    }
 
-	    Box get (Coord coord) {
+	    public Box get (Coord coord) {
 	    	
 	        return bombMap.get(coord);
 	    }
@@ -29,8 +28,9 @@ class Bomb {
 	    private void fixBombsCount () {
 	    	
 	        int maxBombs = Ranges.getSize().x * Ranges.getSize().y /2;
-	        if (totalBombs > maxBombs)
+	        if (totalBombs > maxBombs) {
 	            totalBombs = maxBombs;
+	        }
 	    }
 
 	    private void placeBomb () {
@@ -38,8 +38,7 @@ class Bomb {
 	        while (true) {
 	        	
 	            Coord coord = Ranges.getRandomCoord();
-	            if (Box.BOMB == bombMap.get(coord))
-	                continue;
+	            if (Box.BOMB == bombMap.get(coord)) continue;
 	            bombMap.set(coord, Box.BOMB);
 	            incNumbersAroundBomb(coord);
 	            break;
@@ -48,10 +47,9 @@ class Bomb {
 
 	    private void incNumbersAroundBomb (Coord coord) {
 	
-	        for (Coord around : Ranges.getCoordsArround(coord)) {
+	        for (Coord around : Ranges.getCoordsArround(coord))
 	            if (Box.BOMB != bombMap.get(around)) {
 	                bombMap.set(around, bombMap.get(around).getNextNumberBox());
-	            }
 	        }
 	    }
 

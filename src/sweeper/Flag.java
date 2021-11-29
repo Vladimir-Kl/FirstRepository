@@ -4,14 +4,24 @@ class Flag {
 	
 	 	private Matrix flagMap;
 	    private int countOfclosedBoxes;
+	    private int countOfFlags; //
 
-	    void start () {
+	    public void resetCountOfFlags() {
+			countOfFlags = 0;
+		}
+
+		public int getCountOfFlags() {
+			return countOfFlags;
+		}
+
+		void start () {
 	    	
 	        flagMap = new Matrix(Box.CLOSED);
+	        resetCountOfFlags();
 	        countOfclosedBoxes = Ranges.getSize().x * Ranges.getSize().y;
 	    }
 
-	    Box get (Coord coord) {
+	    public Box get (Coord coord) {
 	    	
 	        return flagMap.get(coord);
 	    }
@@ -20,6 +30,7 @@ class Flag {
 	    public void setOpenedToBox(Coord coord) {
 	    		
 	    	flagMap.set(coord, Box.OPENED);
+
 	        countOfclosedBoxes--;
 	    }
 
@@ -28,7 +39,9 @@ class Flag {
 	        switch (flagMap.get(coord)) {
 	        
 	            case FLAGED : setClosedToBox (coord);
+	            	countOfFlags--;
 	            	break;
+	            	
 	            case CLOSED : setFlagedToBomb(coord);
 	            	break;
 	        }
@@ -42,6 +55,7 @@ class Flag {
 	    private void setFlagedToBomb(Coord coord) {
 	    	
 	        flagMap.set(coord, Box.FLAGED);
+	        countOfFlags++;
 	    }
 
 	    int getCountClosedBoxes() {
