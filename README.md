@@ -36,3 +36,7 @@ List of updates:
 
 In the usual case, a new window will open in the same place instead of the previous one.
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 35644680357daca45276ec9c40769aa3d5233edf
