@@ -8,7 +8,7 @@
 
 Preview The original version:
 
-![](https://user-images.githubusercontent.com/94999233/143879898-6dbfdd80-4c11-4792-917c-6726d7326178.png)
+![](https://github.com/Vladimir-Kl/FirstRepository/blob/main/resources/docs/2021-11-29_145816.png?raw=true)
 
 ##### In addition to writing a version based on the materials of the webinar, the project was expanded and refined.
 Added new features and update
@@ -20,18 +20,18 @@ List of updates:
 - Fixed graphics bugs;
 - Changed game initialization;
 
-![](https://user-images.githubusercontent.com/94999233/143881856-339909d7-af7e-4df4-aab8-997d54f24585.png)
+![](https://github.com/Vladimir-Kl/FirstRepository/blob/main/resources/docs/2021-11-29_150225.png?raw=true)
 - Added menu bar and standard difficulty levels;
 
-![](https://user-images.githubusercontent.com/94999233/143880256-6f1a65d0-318e-4a85-8355-d51e1af5aebb.png)
+![](https://github.com/Vladimir-Kl/FirstRepository/blob/main/resources/docs/2021-11-29_145905.png?raw=true)
 - Added submenu for select custom game settings;
 - Added control for entering text fields;
 
-![](https://user-images.githubusercontent.com/94999233/143881412-0072cd7b-d4d9-4e4f-94ed-7d5f93eb3103.png)
+![](https://github.com/Vladimir-Kl/FirstRepository/blob/main/resources/docs/2021-11-29_150056.png?raw=true)
 - Added control over the position of new windows, as well as the exclusion of the possibility of opening a window in a hidden area of the screen;
 
-![](https://user-images.githubusercontent.com/94999233/143882602-3cde9c04-f489-4763-9f43-6bfa7db35155.png)
+![](https://github.com/Vladimir-Kl/FirstRepository/blob/main/resources/docs/2021-11-29_150452.png?raw=true)
 
-![](https://user-images.githubusercontent.com/94999233/143882797-a10d1b52-d1ec-4b60-a88c-8f7fd5eb5561.png)
+![](https://github.com/Vladimir-Kl/FirstRepository/blob/main/resources/docs/2021-11-29_150542.png?raw=true)
 
 In the usual case, a new window will open in the same place instead of the previous one.
